@@ -1,0 +1,43 @@
+#box{
+	width: 400px;
+	margin:40px auto;
+}
+label{
+	
+}
+input#name{
+	border:0;
+	vertical-align: middle;
+	height: 30px;
+	width: 150px;
+	border-radius: 4px;
+	border:1px solid #ccc;
+	margin-left: 20px;
+	padding-left: 4px;
+}
+button{
+	width: 50px;
+	height: 30px;
+	margin-left: 20px;
+	background: #2F79BA;
+	color:#fff;
+	border:0;
+	border-radius: 4px;
+	cursor: pointer;
+}
+ p{
+	padding: 0;
+	margin: 0;
+	margin-left: 60px;
+	font-size: 14px;
+	margin-top: 4px;
+}
+.gray{
+	color:#A9A9A9;
+}
+.red{
+	color:#f00;
+}
+.green{
+	color:#69B956;
+}
