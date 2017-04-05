@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>任务二：表单（二）多个表单项的动态校验</title>
@@ -7,19 +7,34 @@
 </head>
 
 <body>
-<div id="box">
+<form action="###" onsubmit="return verfiy_form(this);" method="post" >
 	<div class="box1">
-		<label for="name">名称  <input type="text" id="name" name="name" onfocus="onMessage()" onBlur="myTest()"></label>
+		<label for="name"><span>名称</span>  <input type="text" id="name" name="name" onfocus="onMessage()" onBlur="myTest()"></label>
 		<p id="nametext"></p>
 	</div>
 	
 
 	<div class="box1">
-		<label for="password">密码  <input type="password" id="password" name="password" onfocus="onMessage()" onBlur="myTest()"></label>
+		<label for="password"><span>密码</span>  <input type="password" id="password" name="password" onfocus="onPassword()" onBlur="passwordVerfiy()"></label>
 		<p id="password_text"></p>
 	</div>
-	
-</div>
+
+	<div class="box1">
+		<label for="password2"><span>密码确认</span>  <input type="password" id="password2" name="password2" onfocus="onPassword2()" onBlur="password2Verfiy()"></label>
+		<p id="password2_text"></p>
+	</div>
+
+	<div class="box1">
+		<label for="email"><span>邮箱</span>  <input type="text" id="email" name="email" onfocus="onValidate_form()" onBlur="validate_email()"></label>
+		<p id="email_text"></p>
+	</div>
+	<div class="box1">
+		<label for="phone"><span>手机</span>  <input type="text" name="phone" onfocus="onPhone()" onBlur="phoneVerfiy()" id="phone"></label>
+		<p id="phone_text"></p>
+	</div>
+	<button type="submit">提交</button>
+</form>
+
 
 <script src="task2.js"></script>		
 </body>
