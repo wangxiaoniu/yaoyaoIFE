@@ -211,6 +211,7 @@
  	validate_email();
  	if( phoneVerfiy() != 1|| myTest()!=1 || password2Verfiy() != 1 || passwordVerfiy() != 1 ||validate_email()!=1  ){
  		alert("输入有误，请重新检查");
+ 		return false;
  	}else{
  		alert('提交成功');
  	}
