@@ -1,4 +1,3 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -9,23 +8,22 @@
 
 <body>
 <div id="box">
-	<label for="name">名称  <input type="text" id="name" name="name" onfocus="onMessage()" onBlur="myTest()"></label>
-	<p id="p"></p>
+	<div class="box1">
+		<label for="name">名称  <input type="text" id="name" name="name" onfocus="onMessage()" onBlur="myTest()"></label>
+		<p id="nametext"></p>
+	</div>
+	
+
+	<div class="box1">
+		<label for="password">密码  <input type="password" id="password" name="password" onfocus="onMessage()" onBlur="myTest()"></label>
+		<p id="password_text"></p>
+	</div>
+	
 </div>
 
 <script src="task2.js"></script>		
 </body>
 
-
-<!-- var p=document.getElementById('p');
-	function change(){
-		
-		p.innerHTML="对";
-
-	}
-	function not(){
-		p.innerHTML="错";
-	} -->
 
 
 </html>
