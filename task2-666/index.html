@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>任务二：表单（二）多个表单项的动态校验</title>
+<link rel="stylesheet" href="layout.css" />
+</head>
+
+<body>
+<form action="" onsubmit="return verfiy_form(this);" method="post" >
+	<div class="name">
+		<label for="name">名称</label> 
+		<input type="text" id="name" name="name">
+	</div>	
+
+	<div class="password">
+		<label for="password">密码</label>
+		<input type="password" id="password" name="password" onfocus="onPassword()" onBlur="passwordVerfiy()">
+	</div>
+
+	<div class="password2">
+		<label for="password2">密码确认</label>
+		<input type="password" id="password2" name="password2" onfocus="onPassword2()" onBlur="password2Verfiy()">
+	</div>
+
+	<div class="email">
+		<label for="email">邮箱</label>
+		<input type="text" id="email" name="email" onfocus="onValidate_form()" onBlur="validate_email()">
+	</div>
+	<div class="phone">
+		<label for="phone">手机</label>
+		<input type="text" name="phone" onfocus="onPhone()" onBlur="phoneVerfiy()" id="phone">	
+	</div>
+	<button type="submit" id="submit">提交</button>
+</form>
+
+
+<script src="task2.js"></script>		
+</body>
+
+
+
+</html>
+
