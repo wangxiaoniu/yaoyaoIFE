@@ -1,0 +1,60 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box; 
+	-moz-box-sizing:border-box; /* Firefox */ 
+	-webkit-box-sizing:border-box; /* Safari */
+}
+form{
+	width:100%;
+	padding:5% 10%;
+
+}
+div#student_class select,div.work input{
+	height: 30px;
+}
+form div.input{
+	width: 40%;
+	margin:0 auto;
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: flex;
+
+}
+form div.input p{
+	display: inline-block;
+	width: 50%;
+	text-align: center;
+
+}
+form div#student_class{
+	width: 50%;
+	margin:5% auto;
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: space-between;
+}
+select#select_city{
+	width: 30%;
+}
+select#select_school{
+	width: 60%;
+}
+div.work{
+	width: 50%;
+	margin: 0 auto; 
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: space-between;
+}
+div.work label{
+	display: inline-block;
+	text-align: center;
+	width: 15%;
+	padding:0 .2%;
+}
+div.work input#work{
+	width: 85%;
+}

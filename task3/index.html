@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>任务三：表单（三）联动</title>
+	<link rel="stylesheet" href="layout.css">
+</head>
+<body>
+	<form >
+		<div class="input">
+			<p>
+				<input type="radio" name="student" id="student" >
+				<label for="student">在校生</label>
+			</p>
+	
+			<p>
+				<input type="radio" name="student" id="un_student" >
+				<label for="un_student">非在校生</label>
+			</p>
+
+		</div>
+		<div id="student_class">
+			<label for="select_city">学校</label>
+			<select name="select_city" id="select_city">
+				<option value="北京">北京</option>
+				<option value="北京">北京2</option>
+			</select>
+			<select name="select_school" id="select_school">
+				<option value="北京大学">北京大学</option>
+				<option value="北京大学2">北京大学2</option>
+			</select>
+		</div>
+
+		<div class="work">
+			<label for="work">就业单位</label>
+			<input type="text" id="work" name="work">
+		</div>
+	</form>
+	
+</body>
+</html>
