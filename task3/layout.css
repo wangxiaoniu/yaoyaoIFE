@@ -10,12 +10,12 @@ form{
 	padding:5% 10%;
 
 }
-div#student_class select,div.work input{
+div#student_class select,div#work input{
 	height: 30px;
 }
 form div.input{
 	width: 40%;
-	margin:0 auto;
+	margin: 5% auto;
 	display: -moz-flex;
 	display: -webkit-flex;
 	display: flex;
@@ -29,7 +29,7 @@ form div.input p{
 }
 form div#student_class{
 	width: 50%;
-	margin:5% auto;
+	margin:0 auto;
 	display: -moz-flex;
 	display: -webkit-flex;
 	display: flex;
@@ -41,7 +41,7 @@ select#select_city{
 select#select_school{
 	width: 60%;
 }
-div.work{
+div#work{
 	width: 50%;
 	margin: 0 auto; 
 	display: -moz-flex;
@@ -49,12 +49,12 @@ div.work{
 	display: flex;
 	justify-content: space-between;
 }
-div.work label{
+div#work label{
 	display: inline-block;
 	text-align: center;
 	width: 15%;
 	padding:0 .2%;
 }
-div.work input#work{
-	width: 85%;
+div#work input#work{
+	width: 75%;
 }
