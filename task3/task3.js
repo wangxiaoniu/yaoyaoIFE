@@ -1,8 +1,4 @@
-	
-
-
-
-	(function(){
+(function(){
 		if(!document.getElementById) return false;
 		if(!document.getElementById('student')) return false;
 		if(!document.getElementById('un_student')) return false;
