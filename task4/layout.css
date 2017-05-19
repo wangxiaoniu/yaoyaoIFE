@@ -1,4 +1,4 @@
-*{
+		*{
 	padding:0;
 	margin:0;
 	box-sizing:border-box; 
@@ -58,6 +58,7 @@ table.top td,table.sidebar td{
 	height: 49px;
 	background: #f00;
 	border-top: 10px solid #00f;
+	transition:transform 0.5s ease;/*动画过度效果*/
 }
 
 /*命令*/
@@ -79,27 +80,27 @@ table.top td,table.sidebar td{
 	border:1px solid #ccc;
 	cursor:pointer;
 }
-.tun-left{
+/* .tun-left{
 	transform:rotate(-90deg);
-	-ms-transform:rotate(-90deg); /* Internet Explorer */
-	-moz-transform:rotate(-90deg); /* Firefox */
-	-webkit-transform:rotate(-90deg); /* Safari 和 Chrome */
-	-o-transform:rotate(-90deg); /* Opera */
-	transition:transform 0.5s ease;/* 动画过度效果 */
+	-ms-transform:rotate(-90deg); Internet Explorer
+	-moz-transform:rotate(-90deg); Firefox
+	-webkit-transform:rotate(-90deg); Safari 和 Chrome
+	-o-transform:rotate(-90deg); Opera
+	transition:transform 0.5s ease;动画过度效果
 }
 .tun-right{
 	transform:rotate(90deg);
-	-ms-transform:rotate(90deg); /* Internet Explorer */
-	-moz-transform:rotate(90deg); /* Firefox */
-	-webkit-transform:rotate(90deg); /* Safari 和 Chrome */
-	-o-transform:rotate(90deg); /* Opera */
-	transition:transform 0.5s ease;/* 动画过度效果 */
+	-ms-transform:rotate(90deg); Internet Explorer
+	-moz-transform:rotate(90deg); Firefox
+	-webkit-transform:rotate(90deg); Safari 和 Chrome
+	-o-transform:rotate(90deg); Opera
+	transition:transform 0.5s ease;动画过度效果
 }
 .tun-back{
 	transform:rotate(180deg);
-	-ms-transform:rotate(180deg); /* Internet Explorer */
-	-moz-transform:rotate(180deg); /* Firefox */
-	-webkit-transform:rotate(180deg); /* Safari 和 Chrome */
-	-o-transform:rotate(180deg); /* Opera */
-	transition:transform 0.5s ease;/* 动画过度效果 */
-}
+	-ms-transform:rotate(180deg); Internet Explorer
+	-moz-transform:rotate(180deg); Firefox
+	-webkit-transform:rotate(180deg); Safari 和 Chrome
+	-o-transform:rotate(180deg); Opera
+	transition:transform 0.5s ease;动画过度效果
+} */
