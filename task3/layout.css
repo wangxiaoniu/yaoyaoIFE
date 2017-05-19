@@ -19,13 +19,14 @@ form div.input{
 	display: -moz-flex;
 	display: -webkit-flex;
 	display: flex;
-
 }
 form div.input p{
 	display: inline-block;
 	width: 50%;
 	text-align: center;
-
+}
+form div.input p label{
+	cursor: pointer;
 }
 form div#student_class{
 	width: 50%;
