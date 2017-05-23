@@ -14,9 +14,34 @@ var text=document.getElementById('text');
 var defaultDeg=0;//初始角度
 var count=1;//初始化计数 
 
+//获取外链样式
+function getStyle(sname){
+	for(var i=0;i<document.styleSheets.length;i++){
+		var rules;
+		if(document.styleSheets[i].cssRules){//W3C
+
+			rules=document.styleSheets[i].cssRules;
+		}else{
+			rules=document.styleSheets[i].rules;
+		}
+		for(var j=0;j<rules.length;i++){
+			if(rules[j].selectorText==sname){
+				return rules[j].style;
+			}
+		}
+
+	}
+}
 
 
-
+function insertRule(sheet,selectorText,cssText,position){
+	//W3C
+	if(sheet.insertRule){
+		sheet.insertRule(selectorText+'{'+cssText+'}',position);
+	}else if(sheet.addRule){
+		sheet.addRule(selectorText,cssText,position);
+	}
+}
 //小方块运动函数
 function toChange(e){
 	
