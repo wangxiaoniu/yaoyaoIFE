@@ -51,7 +51,39 @@ function toChange(e){
 		defaultDeg=180+defaultDeg;//递增角度值
 		 console.log(count);
 	}
+	if(e.value=='GO'){
+		Go();
+	}
 
+
+
+}
+function Go(){
+	box.style.backgroundColor='yellow';
+	if(!box.style.left){
+		box.style.left="0px";
+	}
+	if(!box.style.top){
+		box.style.top="0px";
+	}
+	var final_x=500,final_y=500;
+	var xpos=parseInt(box.style.left);
+	var xpos=parseInt(box.style.top);
+	
+	if((final_x-xpos)>0){
+		if(count=1){
+			alert('1');
+		}
+		else if(count=2){
+			alert('2');
+		}
+		else if(count=3){
+			alert('3');
+		}
+		else if(count=4){
+			alert('4');
+		}
+	}
 }
 addEvent(btn,'click',function(){
 	toChange(text);
