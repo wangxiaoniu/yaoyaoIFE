@@ -36,7 +36,7 @@ function getstyle(sname) {
 
 //小方块旋转运动函数
 function toChange(e){
-	
+	 var e=e||window.event;
 	if(e.value=='TUN LEF'){
 		if(count==1){
 			count=4;
